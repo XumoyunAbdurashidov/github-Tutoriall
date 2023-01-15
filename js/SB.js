@@ -68,3 +68,25 @@
 // writeGenres();
 
 // Amaliyot
+
+function nusxaObj(obj) {
+  let objNusxa = {};
+
+  for (let key in obj) {
+    objNusxa[key] = obj[key];
+  }
+
+  return objNusxa;
+}
+
+const numbers = {
+  x: 10,
+  y: 5,
+};
+
+const newNumbers = nusxaObj(numbers);
+
+newNumbers.x = 15;
+
+console.log(numbers);
+console.log(newNumbers);
