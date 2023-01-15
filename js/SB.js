@@ -1,6 +1,6 @@
 "use strict";
 
-// Amaliyot
+// Amaliyot =======
 // let numberOffSeries;
 
 // function myFun() {
@@ -66,27 +66,78 @@
 //   }
 // }
 // writeGenres();
+// Amaliyot ======
 
-// Amaliyot
+// Clone ========
+// function nusxaObj(obj) {
+//   let objNusxa = {};
 
-function nusxaObj(obj) {
-  let objNusxa = {};
+//   for (let key in obj) {
+//     objNusxa[key] = obj[key];
+//   }
 
-  for (let key in obj) {
-    objNusxa[key] = obj[key];
-  }
+//   return objNusxa;
+// }
 
-  return objNusxa;
-}
+// const numbers = {
+//   x: 10,
+//   y: 5,
+// };
 
-const numbers = {
-  x: 10,
-  y: 5,
-};
+// const newNumbers = nusxaObj(numbers);
 
-const newNumbers = nusxaObj(numbers);
+// newNumbers.x = 15;
 
-newNumbers.x = 15;
+// console.log(numbers);
+// console.log(newNumbers);
+//clone ======
 
-console.log(numbers);
-console.log(newNumbers);
+// clone new ======
+// const numbers = {
+//   x: 10,
+//   y: 5,
+//   z: {
+//     a: 1,
+//     b: 2,
+//   },
+// };
+
+// const newNumber = Object.assign({}, numbers);
+
+// newNumber.x = 15;
+
+// console.log(newNumber);
+//clone new ======
+
+//clone add =====
+// const numbers = {
+//   x: 10,
+//   y: 5,
+// };
+
+// const addNumber = {
+//   z: 15,
+// };
+
+// const allNumbers = Object.assign(numbers, addNumber);
+
+// console.log(allNumbers);
+//clone add =====
+
+//clone arr =====
+// const arr = [1, 2, 3];
+
+// const newArr = arr.slice();
+// newArr[1] = "Samar";
+
+// console.log(arr);
+// console.log(newArr);
+//clone arr===
+
+//clone arr add =====
+// const leverpool = ["Salah", "Mane"];
+// const manCity = ["Mahrez"];
+
+// const mixPlayer = [...leverpool, ...manCity];
+
+// console.log(mixPlayer);
